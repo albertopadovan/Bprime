@@ -1,5 +1,7 @@
 *.log
 *~
-.cmake
+*.bpt
+*.cmake
 CMakeCache.txt
 CMakeFiles/
+generate_bprime_table

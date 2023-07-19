@@ -5,7 +5,7 @@ import pandas as pd
 import scipy.interpolate as scipyint
 
 xml_file = "tacot26.xml"                    # File containing the edge/pyro compositions
-table_filename = "Bprime_table"             # Save the Bprime table to table_filename
+table_filename = "Bprime_table.bpt"         # Save the Bprime table to table_filename
 
 # Define the temperature, pressure and normalized blowing rate arrays
 ts = np.arange(250,4025,25)                                 # Array of temperatures [K] (from 250 to 4000 in increments of 25)
