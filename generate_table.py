@@ -21,7 +21,6 @@ ts = np.arange(250,4025,25)                         # Temps from from 250 to 400
 ps = np.asarray([101.325,1013.25,10132.5,101325])   # Pressures (jumps of a factor of 10) (the jump needs to be equal across all values)
 bs = np.arange(-10,10.1,0.1)                        # Blowing/suction rates from -10 to 10 (included) in increments of 0.1
 
-
 # -------------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------------
 # ------ This file outputs the Bprime table. The table will contain 5 columns   -------------------
