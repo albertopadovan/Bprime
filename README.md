@@ -12,7 +12,7 @@ In this repository we provide code to generate unified Bprime tables with positi
 - `cd Modified_Bprime_cloned && cmake .` 
 - `make generate_bprime_tables` (the file `generate_bprime_tables.cpp` is a modified version of the file `bprime.cpp` available in `${MPP_DIRECTORY}/src/apps`)
 - `python3 generate_table.py`
-- This should have generated the Bprime table in the file `Bprime_table.bpt`
+- This should have generated a file `Bprime_table.bpt` containing the modified Bprime table
 
 ## Debugging hints
 - Check that Mutation++ is properly installed by running their [tests](https://github.com/mutationpp/Mutationpp/blob/master/docs/installation.md#top)
