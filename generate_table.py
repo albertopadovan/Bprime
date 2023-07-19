@@ -4,13 +4,41 @@ import numpy as np
 import pandas as pd
 import scipy.interpolate as scipyint
 
-xml_file = "tacot26.xml"                    # File containing the edge/pyro compositions
-table_filename = "Bprime_table.bpt"         # Save the Bprime table to table_filename
+# -------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------
+# ------------ User Inputs:                                                         ---------------
+# ------------ 1. .xml file (compatible w/ Mutation++)                              ---------------
+# ------------ 2. table_filename: name of the file the Bprime table will be save to ---------------
+# ------------ 3. ts: array of temperatures [K]                                     ---------------
+# ------------ 4. ps: array of pressures [Pa]                                       ---------------
+# ------------ 5. bs: array of normalized blowing rates                             ---------------
+# -------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------
 
-# Define the temperature, pressure and normalized blowing rate arrays
-ts = np.arange(250,4025,25)                                 # Array of temperatures [K] (from 250 to 4000 in increments of 25)
-ps = np.asarray([101.325,1013.25,10132.5,101325])           # Array of pressures [Pa]
-bs = np.arange(-10,10.1,0.1)                                # Array of normalized blowing rates (from -10 to 10 in increments of 0.1)
+xml_file = "tacot26.xml"                    
+table_filename = "Bprime_table.bpt"        
+ts = np.arange(250,4025,25)                         # Temps from from 250 to 4000 (included) in increments of 25
+ps = np.asarray([101.325,1013.25,10132.5,101325])   # Pressures (jumps of a factor of 10) (the jump needs to be equal across all values)
+bs = np.arange(-10,10.1,0.1)                        # Blowing/suction rates from -10 to 10 (included) in increments of 0.1
+
+
+# -------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------
+# ------ This file outputs the Bprime table. The table will contain 5 columns   -------------------
+# ------ [Pressure [bar], Bg, Temp [K], Bc, Hw [kJ/Kg]] where where Bc is       -------------------
+# ------ the ablation rate (related to the surface recession velocity) and Hw   -------------------
+# ------ is the formation enthalpy of the chemical equilibrium mixture.         -------------------
+# -------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------
+
+
+
+# -------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------
+# ------- No user input required from here on out -------------------------------------------------
+# -------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------
+
 
 bsn = bs[:len(bs)//2+1]                                     # Extract the negative values in bs
 bsp = bs[len(bs)//2:]                                       # Extract the positive values in bs
