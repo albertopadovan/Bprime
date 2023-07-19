@@ -1,0 +1,4 @@
+*.log
+*~
+CMakeCache.txt
+CMakeFiles/
