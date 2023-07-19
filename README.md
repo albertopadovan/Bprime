@@ -15,4 +15,4 @@ In this repository we provide code to generate unified Bprime tables with positi
 
 ## Debugging hints
 - Check that Mutation++ is properly installed by running their [tests](https://github.com/mutationpp/Mutationpp/blob/master/docs/installation.md#top)
-- If running on Linux, check if the Mutation++ library way installed in `${CMAKE_INSTALL_PREFIX}/lib` or `${CMAKE_INSTALL_PREFIX}/lib64`, then verify that the correct path is used in the `target_link_libraries()` in the `CMakeLists.txt` file that ships with the `Bprime` repository.
+- If running on Linux, check if the Mutation++ library way installed in `${CMAKE_INSTALL_PREFIX}/lib` or `${CMAKE_INSTALL_PREFIX}/lib64`, then verify that the correct path is used in the `target_link_libraries()` command in the `CMakeLists.txt` file that ships with the `Bprime` repository.
