@@ -24,7 +24,7 @@ bs = np.arange(-10,10.1,0.1)                        # Blowing/suction rates from
 # -------------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------------
 # ------ This file outputs the Bprime table. The table will contain 5 columns   -------------------
-# ------ [Pressure [bar], Bg, Temp [K], Bc, Hw [kJ/Kg]] where where Bc is       -------------------
+# ------ [Pressure [bar], Bg, Temp [K], Bc, Hw [kJ/Kg]] where Bc is             -------------------
 # ------ the ablation rate (related to the surface recession velocity) and Hw   -------------------
 # ------ is the formation enthalpy of the chemical equilibrium mixture.         -------------------
 # -------------------------------------------------------------------------------------------------
