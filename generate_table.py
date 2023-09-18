@@ -8,7 +8,7 @@ import scipy.interpolate as scipyint
 # -------------------------------------------------------------------------------------------------
 # ------------ User Inputs:                                                         ---------------
 # ------------ 1. .xml file (compatible w/ Mutation++)                              ---------------
-# ------------ 2. table_filename: name of the file the Bprime table will be save to ---------------
+# ------------ 2. table_filename: name of the file the Bprime table will be saved to --------------
 # ------------ 3. ts: array of temperatures [K]                                     ---------------
 # ------------ 4. ps: array of pressures [Pa]                                       ---------------
 # ------------ 5. bs: array of normalized blowing rates                             ---------------
