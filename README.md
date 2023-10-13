@@ -1,6 +1,6 @@
 # Modified_Bprime
 
-In this repository we provide code to generate unified Bprime tables with positive and negative normalized mass flux.
+In this repository we provide code to generate unified B' tables with positive and negative normalized mass flux. The underlying theory is presented in Padovan, A. et al., "An extended B' formulation for ablating-surface boundary conditions," <i> Int. J. of Heat and Mass Transfer </i>, 2023 available [here](https://www.sciencedirect.com/science/article/pii/S0017931023009158?dgcid=author).
 
 ## Dependencies
 - [Mutation++](https://github.com/mutationpp/Mutationpp) (and dependencies therein). 
